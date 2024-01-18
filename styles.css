@@ -1,0 +1,132 @@
+
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: black;
+}
+
+/** HEADER **/
+.navbar {
+    background-color: #f6b519;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand {
+    padding-top: 15px;
+}
+
+.navbar-brand h1 {
+    color: #557c3e;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-toggler {
+    border: 2px solid #557c3e;
+    margin-top: 6px;
+    margin-right: -4px;
+    border-radius: 4px;
+} 
+
+ #main-nav ul li a{
+    color: #557c3e;
+    text-align: center;
+    border: 2px solid black;
+    line-height: 0.65;
+    padding-top: 5px;
+}
+/** END OF HEADER **/
+
+.title h1 {
+    margin-block: 40px;
+    text-align: center;
+}
+
+#polaris {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 70px;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+section {
+    flex-basis: 30%;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: #61122f;
+    border: 3px solid black;
+}
+
+section h3 {
+    text-align: center;
+    padding: 3px;
+}
+
+section p {
+    margin-block: 20px;
+    margin-inline: 10px;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+    section {
+        flex-basis: 48%;
+    }
+
+    #thirdbox {
+        flex-basis: 100%;
+        margin-block: 30px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .title>h1 {
+        font-size: 20px;
+        margin-block: 20px;
+    }
+
+    #polaris {
+        flex-direction: column;
+    }
+
+    .section {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+}
+/** .container > h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#bodypart {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+
+#part {
+    border: 2px solid;
+}
+
+@media screen and (max-width:575px) {
+    #main-nav ul li a {
+        display: block;
+        background-color: #fff;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}
+/* @media screen and (min-width:992px) and (max-width:1205px) {
+    body {
+        background-color: green;
+    }
+}  */
